@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<meta name="description" content="Free Web tutorials">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="author" content="PS">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap">
+<title>Minneapolis, MN</title>
+<style>
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #666666;
+  position: relative;
+  opacity: .80;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  opacity: .80;
+}
+
+.topnav a.icon {
+  background: white;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #4d4d4d;
+  color: white;
+  opacity: .80;
+}
+
+.active {
+  background-color: #4d4d4d;
+  color: white;
+}
+
+h1{
+	color:white;
+	border-bottom-style: solid;
+	border-bottom-color: white;
+	text-align: center;
+	font-size: 50px;
+}
+	
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  opacity: .80;
+}
+
+body {
+	background-image:url(images/city.jpg);
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+img {
+	border-radius: 8px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	opacity:1.0;
+}
+
+.city {
+  background-color:#4d4d4d;
+  color: white;
+  margin: 50px;
+  padding: 50px;
+  opacity:.90;
+}
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a href="#home" class="active">Home</a>
+  <div id="myLinks">
+    <a href="https://www.minneapolis.org/150-things-to-do-in-minneapolis/">Attractions</a>
+    <a href="https://www.twincities.com/mn-fortune-500-companies/">Fortune 500's</a>
+    <a href="https://www.britannica.com/place/Minneapolis">History</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+</style>
+
+<body>
+
+<div class="mobile-container">
+
+<h1>MINNEAPOLIS</h1>
+
+<div class="city">
+<h2>North Loop</h2>
+<p>Also known as the Warehouse District, the North Loop is a vibrant neighborhood known for its cool start-up vibe, innovative restaurants, hip bars and gay nightspots. Converted warehouses from the late 19th and early 20th centuries contain indie fashion and design shops, and the Minneapolis Farmers Market sells produce, locally made snacks and candy. Minnesota Twins baseball fans head to Target Field on game days. - Google</p>
+<a>
+		<img src="images/northloop.jpg" alt="northloop"
+		style="width:500px;height:500px;">
+		
+   </a>
+</div> 
+	
+<div class="city">
+<h2>Bde Maka Ska</h2>
+<p>Bde Maka Ska is the largest lake in Minneapolis, Minnesota, United States, and part of the city's Chain of Lakes. Surrounded by city park land and circled by bike and walking trails, it is popular for many outdoor activities. The lake has an area of 401 acres and a maximum depth of 87 feet. - Wikipedia</p>
+	<a>
+		<img src="images/bdemakaska.jpg" alt="bdemakaska"
+		style="opacity:100%;width:500px;height:500px;">
+   </a>
+</div>
+
+<div class="city">
+<h2>Stone Arch Bridge</h2>
+<p>The Stone Arch Bridge is a former railroad bridge crossing the Mississippi River at Saint Anthony Falls in downtown Minneapolis, Minnesota. It is the only arched bridge made of stone on the entire Mississippi River. It is the second oldest bridge on the river next to Eads Bridge. - Wikipedia</p>
+	<a>
+		<img src="images/stonearch.jpg" alt="stonearch"
+		style="width:500px;height:500px;">
+   </a>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</body>
+</html>
